@@ -143,7 +143,14 @@ const peopleList = document.getElementById("peopleList");
 // Iterujemy przez tablicę osób i tworzymy <li> dla każdej osoby
 players.forEach((person) => {
   const listItem = document.createElement("li");
-  listItem.textContent = players.name + " " + person.position;
+  listItem.textContent =
+    person.name +
+    " " +
+    person.lastName +
+    " " +
+    person.age.year +
+    " " +
+    person.rating.freekick;
   peopleList.appendChild(listItem);
 });
 
