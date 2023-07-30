@@ -138,25 +138,18 @@ const players = [
   },
 ];
 
-// for (const player of players) {
-//   console.log(player.name);
-// }
+function showPlayer(name, position) {
+  const wynikElement = document.getElementById("wynik");
+  wynikElement.textContent = `Imię: ${name}, Pozycja na boisku: ${position}`;
+}
 
-// for (const player of players) {
-//   console.log(player.lastName);
-// }
+// const names = players.map((player) => player.name);
 
-// for (const player of players) {
-//   console.log(player.position);
-// }
+// const article = document.querySelector(".article");
+// const htmlString = `
+// <ul>
+//   <li>zawodnik test3  ${names}</li>
+// </ul>
+// `;
 
-const names = players.map((player) => player.name);
-
-const article = document.querySelector(".article");
-const htmlString = `
-<ul>
-  <li>zawodnik test3  ${names}</li>
-</ul>
-`;
-
-article.innerHTML += htmlString;
+// article.innerHTML += htmlString;
