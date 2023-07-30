@@ -140,7 +140,7 @@ const players = [
 
 function showPlayer(name, position) {
   const wynikElement = document.getElementById("wynik");
-  wynikElement.textContent = `Imię: ${name}, Pozycja na boisku: ${position}`;
+  wynikElement.textContent = `Imię piłkarza: ${name}, Pozycja na boisku: ${position}`;
 }
 
 // const names = players.map((player) => player.name);
