@@ -144,12 +144,19 @@ const peopleList = document.getElementById("peopleList");
 players.forEach((person) => {
   const listItem = document.createElement("li");
   listItem.textContent =
+    "Imię: " +
     person.name +
     " " +
+    "Nazwisko: " +
     person.lastName +
     " " +
+    "Pozycja na boisku: " +
+    person.position +
+    " " +
+    "Rok urodzenia: " +
     person.age.year +
     " " +
+    "Ranking rzuty wolne: " +
     person.rating.freekick;
   peopleList.appendChild(listItem);
 });
