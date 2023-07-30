@@ -138,10 +138,14 @@ const players = [
   },
 ];
 
-function showPlayer(name, position) {
-  const wynikElement = document.getElementById("wynik");
-  wynikElement.textContent = `Imię piłkarza: ${name}, Pozycja na boisku: ${position}`;
-}
+const peopleList = document.getElementById("peopleList");
+
+// Iterujemy przez tablicę osób i tworzymy <li> dla każdej osoby
+players.forEach((person) => {
+  const listItem = document.createElement("li");
+  listItem.textContent = players.name + " " + person.position;
+  peopleList.appendChild(listItem);
+});
 
 // const names = players.map((player) => player.name);
 
