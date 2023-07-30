@@ -1,0 +1,6 @@
+.listStyle {
+  margin-bottom: 10px;
+  border-bottom: 1px solid red;
+  padding-bottom: 5px;
+  list-style: none;
+}

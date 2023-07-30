@@ -153,14 +153,3 @@ players.forEach((person) => {
     person.rating.freekick;
   peopleList.appendChild(listItem);
 });
-
-// const names = players.map((player) => player.name);
-
-// const article = document.querySelector(".article");
-// const htmlString = `
-// <ul>
-//   <li>zawodnik test3  ${names}</li>
-// </ul>
-// `;
-
-// article.innerHTML += htmlString;
